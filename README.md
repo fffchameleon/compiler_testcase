@@ -1,6 +1,12 @@
 # compiler_testcase
 
-create script
+in hw1 create testcase file
+```
+mkdir testcase
+cd testcase
+git clone https://github.com/fffchameleon/compiler_testcase.git
+```
+in hw1, create script
 ```
 vim ./run_test.sh 
 ```
