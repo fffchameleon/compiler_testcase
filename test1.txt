@@ -1,0 +1,174 @@
+10..20
+"abc""def"
+Note that in Ada/CS, there is no run-away comments since every comment is terminated by
+10.3E+5
+10.3E+BC
+10.3E+2.34
+10.3EBC
+PROGRAM fibonacci
+BEGIN
+
+	STRING input := "Please input an integer number: ";
+	STRING space := " ";
+	STRING eol := "\n";
+
+	FUNCTION INT F (INT n)
+	BEGIN
+
+		IF (n > 2)
+		     RETURN F(n-1)+F(n-2);
+		ELSIF (n = 0)   --This is a comment			
+			RETURN 0;
+		ELSIF (n = 1)
+			RETURN 1;
+		ELSIF (n = 2)
+			RETURN 1;
+	     ENDIF
+	END
+	
+	
+	FUNCTION VOID main ()
+	BEGIN
+		INT i, end, result;
+		WRITE(input);
+		READ(end);
+
+	i := 0;
+	DO
+		result := F(i);
+		WRITE (i,space);
+		WRITE (result,eol);
+		i := i + 1;	
+	WHILE (i != end);
+
+	END
+
+END	
+PROGRAM sqrt
+BEGIN
+
+	STRING dummy := "abcde";  --This is dummy to satisfy the grammar
+
+	FLOAT n;
+	FLOAT x1,x2;
+	FLOAT fx, dfx;
+	FLOAT error;
+	INT i;
+
+	FUNCTION VOID main()
+	BEGIN
+		error := 0.001;
+		READ (x1);
+		fx := x1*x1 - n;
+		dfx := 2.0*x1;
+		x2 := x1 - fx/dfx;
+
+		x1 := x2;
+		fx := x1*x1 - n;
+		dfx := 2.0*x1;
+		x2 := x1 - fx/dfx;
+		DO
+			x1 := x2;
+			fx := x1*x1 - n;
+			dfx := 2.0*x1;
+			x2 := x1 - fx/dfx;
+		WHILE ((x1 - x2) > error);
+
+		WRITE (x2);
+	END
+END
+PROGRAM sqrt
+BEGIN
+
+	STRING dummy := "abcde";  --This is dummy to satisfy the grammar
+
+     INT i, j, k;
+     
+	FUNCTION VOID main()
+	BEGIN
+		i := 0;
+		j := 0;
+		k := 0;
+		result := 0;
+		
+		DO
+		     i := i + 1;
+		     DO
+		          j := j + 1;
+		          DO
+		               k := k + 1;
+		               result := result + 1;
+		          WHILE (k < 100);
+		     WHILE (j <= 99);
+		WHILE (i <= 99);
+
+		WRITE (result);
+	END
+END
+PROGRAM loop
+BEGIN
+
+     STRING guess := "Guess a number: ";
+     STRING correct := "Correct!\n";
+     STRING wrong := "Wrong!\n";
+     STRING out1 := "It took you ";
+     STRING out2 := " guesses";
+
+	INT i;
+	INT j;
+
+	PROTO VOID main();
+
+	FUNCTION VOID main()
+	BEGIN
+		i := 17;
+		j := 0;
+		k := 0;
+		DO
+			WRITE(guess);
+			READ(j);
+			k := k + 1;
+			IF (i = j)
+			     WRITE(correct);
+			     BREAK;
+			ELSIF (TRUE)
+			     WRITE(wrong);
+			ENDIF
+		WHILE (TRUE);
+
+		WRITE (out1, k, out2);
+	END
+END
+PROGRAM loop
+BEGIN
+
+     STRING guess := "Guess a number: ";
+     STRING correct := "Correct!\n";
+     STRING wrong := "Wrong!\n";
+     STRING out1 := "It took you ";
+     STRING out2 := " guesses";
+
+	INT i;
+	INT j;
+
+	PROTO VOID main();
+
+	FUNCTION VOID main()
+	BEGIN
+		i := 17;
+		j := 0;
+		k := 0;
+		DO
+			WRITE(guess);
+			READ(j);
+			k := k + 1;
+			IF (i = j)
+			     WRITE(correct);
+			ELSIF (TRUE)
+			     WRITE(wrong);
+			ENDIF
+		WHILE (i != j);
+
+		WRITE (out1, k, out2);
+	END
+END

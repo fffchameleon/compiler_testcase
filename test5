@@ -1,0 +1,23 @@
+int a = 10;
+float num = 3.14;
+double d_num = -4.25e-5;
+char c = 'A';
+char str[] = "Hello, World!";
+if (a > b) { a = a + 1; } else { b = b + 1; }
+for (int i = 0; i < 10; i++) { printf("%d\n", i); }
+while (x < 100) { x = x * 2; }
+do { y = y + 1; } while (y < 50);
+switch (option) { case 1: func1(); break; case 2: func2(); break; default: printf("Invalid option\n"); }
+define PI 3.14159
+#pragma source on
+#pragma token off
+typedef struct { int x; int y; } Point;
+int square(int x) { return x * x; }
+int arr[5] = {1, 2, 3, 4, 5};
+FILE *fp = fopen("file.txt", "r");
+void swap(int *a, int *b) { int temp = *a; *a = *b; *b = temp; }
+/* This is a multiline comment. */
+// This is a single-line comment. /*
+this is another comment
+*/
+#pragma source on
