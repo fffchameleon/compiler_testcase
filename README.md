@@ -2,8 +2,6 @@
 
 in hw1 create testcase file
 ```
-mkdir testcase
-cd testcase
 git clone https://github.com/fffchameleon/compiler_testcase.git
 ```
 in hw1, create script
@@ -13,7 +11,7 @@ vim ./run_test.sh
 ```bash
 #!/bin/bash
 
-TEST_DIR="testcase"
+TEST_DIR="compiler_testcase"
 EXECUTABLE="scanner"
 
 for test_file in ${TEST_DIR}/*; do
