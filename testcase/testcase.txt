@@ -30,7 +30,8 @@ NULL __COUNTER__ __LINE__ INT_MAX INT_MIN CHAR_MAX CHAR_MIN MAX MIN
 comment //comment
 comment  /*the unseen blade is the deadliest*/ comment
 char* bbc = "abcdefg\"sdfsf"
-char* bbc = "abcdefg\n\\\'\"\?"
+char* bbc = "abcdefg?\n\\\'\"\?"
+char _ = '?';
 haha
 -0.0
 -0.
@@ -39,3 +40,4 @@ haha
 +0.
 -0
 -.88
+-.
