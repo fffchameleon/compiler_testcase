@@ -36,6 +36,7 @@ Unclosed "string"
 
 /* character constants */
 'a'  'b'  'Z'   '1'  '\t'  '\n'   '\0'     
+'\xDc' '\uFdFb' '\UcCaDbFdD'
 
 /* comment*/
 // This is a single-line comment

@@ -26,10 +26,12 @@ int main() {
 #pragma source                   on
   string sss = "string\"";
   string ssss = "string\r";
+  string sssss = "O'	RLY?";  // Note: the original meme doesn't include the single quotation mark
 
   char cc = '\t';
   char ccc = ' ';
   char cccc = '\'';
+  char ccccc = '"';
 
         // // // // qwer
   a = a + b;
