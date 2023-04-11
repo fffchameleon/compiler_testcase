@@ -1,4 +1,5 @@
 # compiler_testcase
+<img src="https://i.imgur.com/9JbgeC4.png" width="700">
 
 ## Example Usage
 ```
