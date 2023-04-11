@@ -46,7 +46,8 @@ if len(sys.argv) == 3:
     print(f"  {scanner:<{column_length}}\t{golden_scanner:<{column_length}}")
     print("  " + "-" * column_length + "\t" + "-" * column_length)
     for line1, line2 in itertools.zip_longest(lines1, lines2):
-        if line1 != line2:
+        red = line1 != line2 
+        if red:
             print(f'{RED}',end='')
         if not line1:
             line1 = ""
@@ -61,5 +62,5 @@ if len(sys.argv) == 3:
                 print("  ", end='')
             else:
                 break
-        if line1 != line2:
+        if red:
             print(f'{RESET}',end='')
