@@ -41,18 +41,25 @@ if len(sys.argv) == 3:
     lines1 = output1.decode().splitlines()
     lines2 = output2.decode().splitlines()
 
-    max_length = max(len(line) for line in lines1 + lines2)
+    column_length = 35
     
-    print(f"{scanner:<{max_length}}\t\t{golden_scanner:<{max_length}}")
-    print("-" * max_length + "\t\t" + "-" * max_length)
+    print(f"  {scanner:<{column_length}}\t{golden_scanner:<{column_length}}")
+    print("  " + "-" * column_length + "\t" + "-" * column_length)
     for line1, line2 in itertools.zip_longest(lines1, lines2):
         if line1 != line2:
             print(f'{RED}',end='')
         if not line1:
-            print(f"{' ':<{max_length}}\t\t{line2:<{max_length}}")
-        elif not line2:
-            print(f"{line1:<{max_length}}\t\t{' ':<{max_length}}")
-        else:
-            print(f"{line1:<{max_length}}\t\t{line2:<{max_length}}")
+            line1 = ""
+        if not line2:
+            line2 = ""
+        print("> ", end='')
+        while True:
+            print(f"{line1[:column_length]:<{column_length}}\t{line2[:column_length]:<{column_length}}")
+            line1 = line1[column_length:]
+            line2 = line2[column_length:]
+            if line1 or line2:
+                print("  ", end='')
+            else:
+                break
         if line1 != line2:
             print(f'{RESET}',end='')
