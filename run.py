@@ -21,8 +21,8 @@ golden_scanner = "golden_scanner"
 if len(sys.argv) == 2:
     for root, dirs, files in os.walk("testcase"):
         for filename in files:
-            output1 = subprocess.check_output(f"{scanner} < /home/cd23p116/testcase/compiler_testcase/testcase/{filename}", shell=True)
-            output2 = subprocess.check_output(f"{golden_scanner} < /home/cd23p116/testcase/compiler_testcase/testcase/{filename}", shell=True)
+            output1 = subprocess.check_output(f"{scanner} < testcase/{filename}", shell=True)
+            output2 = subprocess.check_output(f"{golden_scanner} < testcase/{filename}", shell=True)
             if output1 == output2:
                 print(f"test {filename:<35} {GREEN}{'correct':>10}{RESET}")
             else:
