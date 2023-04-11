@@ -1,0 +1,233 @@
+// pragma test
+#pragma source on
+#pragma source off
+#pragma token on
+#pragma token off
+// combinations start
+// 1.
+ #pragma source on
+abcd
+#pragma source off
+abcd
+#pragma token on
+abcd
+#pragma token off
+wkjel
+
+// 2.
+#pragma source on
+abcd
+#pragma source off
+abcd
+#pragma token off
+abcd
+#pragma token on
+wefwq
+
+// 3.
+
+#pragma source on
+abcd
+#pragma token on
+abcd
+#pragma source off
+abcd
+#pragma token off
+
+wfle
+
+// 4. 
+#pragma	  source on
+abcd
+    #pragma token on
+abcd
+    #pragma token off
+abcd
+#pragma source off
+// 5. 
+#pragma source on
+abcd
+#pragma token off
+abcd
+#pragma source off
+abcd
+#pragma token on
+
+//6
+#pragma source on
+abcd
+#pragma token off
+abcd
+#pragma token on
+abcd
+#pragma source off
+
+
+//7
+#pragma source off
+abcd
+#pragma source on
+abcd
+#pragma token on
+abcd
+#pragma token off
+
+// 8
+#pragma source off
+abcd
+#pragma source on
+abcd
+#pragma token off
+abcd
+#pragma token on
+
+// 9
+#pragma source off
+abcd
+#pragma token on
+abcd
+#pragma source on
+abcd
+#pragma token off
+
+
+// 10
+#pragma source off
+abcd
+#pragma token on
+abcd
+#pragma token off
+abcd
+#pragma source on
+
+
+// 11
+#pragma source off
+abcd
+#pragma token off
+abcd
+#pragma source on
+abcd
+#pragma token on
+
+
+// 12
+#pragma source off
+abcd
+#pragma token off
+abcd
+#pragma token on
+abcd
+#pragma source on
+
+
+// 13
+#pragma token on
+abcd
+#pragma source on
+abcd
+#pragma source off
+abcd
+#pragma token off
+
+
+// 14
+#pragma token on
+abcd
+#pragma source on
+abcd
+#pragma token off
+abcd
+#pragma source off
+
+// 15
+#pragma token on
+abcd
+#pragma source off
+abcd
+#pragma source on
+abcd
+#pragma token off
+
+// 16
+#pragma token on
+abcd
+#pragma source off
+abcd
+#pragma token off
+abcd
+#pragma source on
+
+// 17
+#pragma token on
+abcd
+#pragma token off
+abcd
+#pragma source on
+abcd
+#pragma source off
+
+// 18
+#pragma token on
+abcd
+#pragma token off
+abcd
+#pragma source off
+abcd
+#pragma source on
+
+// 19
+#pragma token off
+abcd
+#pragma source on
+abcd
+#pragma source off
+abcd
+#pragma token on
+
+// 20
+#pragma token off
+abcd
+#pragma source on
+abcd
+#pragma token on
+abcd
+#pragma source off
+
+// 21
+#pragma token off
+abcd
+#pragma source off
+abcd
+#pragma source on
+abcd
+#pragma token on
+
+// 22
+#pragma token off
+abcd
+#pragma source off
+abcd
+#pragma token on
+abcd
+#pragma source on
+
+// 23
+#pragma token off
+abcd
+#pragma token on
+abcd
+#pragma source on
+abcd
+#pragma source off
+
+//24
+#pragma token off
+abcd
+#pragma token on
+abcd
+#pragma source off
+abcd
+#pragma source on
+
+
