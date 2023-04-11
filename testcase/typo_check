@@ -1,0 +1,286 @@
+// boundry test (MAX 299
+fjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+
+// KEYWORDS
+for, do, while,  break, continue, if, else, return, struct, switch, case, default
+void,int, double,float, char
+const, signed, unsigned, short, long
+
+// MACROS
+NULL, __COUNTER__, __LINE__, INT_MAX, INT_MIN, CHAR_MAX, CHAR_MIN, MAX, MIN
+
+// IDENTIFIERS
+ _variable myVar123 VAR_NAME _2nd_var	 
+1variable   9_myVar
+var!able var@name my#var var$1
+variable name my var var 123
+a _ A123456789012345678901234567890123456789012345678901234567890123123425423452578162875436817462764 1 !
+
+// OPERATORS	    \n
++ ++ - -- * / % < <= > >= == != = && || ! & |
+
+// PUNC
+: ; , . [ ] () ( ) { } {} :: ...........
+
+// INTEGER
+0 -0 1 123 45 -2131 +0 +1 +123 +45
+12a3 4_5 -2c131 1 23 -2 131 +-123 ++45 --2131 -2134324358973294 2187398479812567216
+
+/*  FLOTAT   */	  
+0.0 0.1234 123.456 -0.0 -0.1234  +0.0 +0.1234 +123.567  .1234 1234. -.234214 -23424.
+0.a23421 1234.242g3 -0.12342d1234 0. 2314 - 0.2341 +-0.123421 123.243.5431 -0..2421
+
+/* string constants" */
+"This is a string"  "Hello, World!"  "12345"  "This is a "quote" character."   "This string contains a \ backslash."
+"First line.\nSecond line."    "Tab\tCharacter"
+Unclosed "string"
+
+/* character constants */
+'a'  'b'  'Z'   '1'  '\t'  '\n'   '\0'     
+
+/* comment*/
+// This is a single-line comment
+int x = 5;    // Variable declaration with a single-line comment
+/* This is a multi-line comment /
+/  This is a multi-line comment\n spanning multiple lines\n*/
+ int x = 5; /* Variable declaration with a multi-line comment */
+ /* This is a multi-line comment /* with a nested comment */ */
+  // This is a single-line comment /* followed by a multi-line comment /
+ / This is a multi-line comment */ // followed by a single-line comment
+
+ /* note */
+ ab123  ab-123 ab.123 
+
+ /* #pragma source on */
+#pragma source on
+#pragma source off
+#pragma token on
+#pragma token off
+// combinations start
+// 1.
+ #pragma source on
+abcd
+#pragma source off
+abcd
+#pragma token on
+abcd
+#pragma token off
+wkjel
+
+// 2.
+#pragma source on
+abcd
+#pragma source off
+abcd
+#pragma token off
+abcd
+#pragma token on
+wefwq
+
+// 3.
+
+#pragma source on
+abcd
+#pragma token on
+abcd
+#pragma source off
+abcd
+#pragma token off
+
+wfle
+
+// 4. 
+#pragma	  source on
+abcd
+    #pragma token on
+abcd
+    #pragma token off
+abcd
+#pragma source off
+// 5. 
+#pragma source on
+abcd
+#pragma token off
+abcd
+#pragma source off
+abcd
+#pragma token on
+
+//6
+#pragma source on
+abcd
+#pragma token off
+abcd
+#pragma token on
+abcd
+#pragma source off
+
+
+//7
+#pragma source off
+abcd
+#pragma source on
+abcd
+#pragma token on
+abcd
+#pragma token off
+
+// 8
+#pragma source off
+abcd
+#pragma source on
+abcd
+#pragma token off
+abcd
+#pragma token on
+
+// 9
+#pragma source off
+abcd
+#pragma token on
+abcd
+#pragma source on
+abcd
+#pragma token off
+
+
+// 10
+#pragma source off
+abcd
+#pragma token on
+abcd
+#pragma token off
+abcd
+#pragma source on
+
+
+// 11
+#pragma source off
+abcd
+#pragma token off
+abcd
+#pragma source on
+abcd
+#pragma token on
+
+
+// 12
+#pragma source off
+abcd
+#pragma token off
+abcd
+#pragma token on
+abcd
+#pragma source on
+
+
+// 13
+#pragma token on
+abcd
+#pragma source on
+abcd
+#pragma source off
+abcd
+#pragma token off
+
+
+// 14
+#pragma token on
+abcd
+#pragma source on
+abcd
+#pragma token off
+abcd
+#pragma source off
+
+// 15
+#pragma token on
+abcd
+#pragma source off
+abcd
+#pragma source on
+abcd
+#pragma token off
+
+// 16
+#pragma token on
+abcd
+#pragma source off
+abcd
+#pragma token off
+abcd
+#pragma source on
+
+// 17
+#pragma token on
+abcd
+#pragma token off
+abcd
+#pragma source on
+abcd
+#pragma source off
+
+// 18
+#pragma token on
+abcd
+#pragma token off
+abcd
+#pragma source off
+abcd
+#pragma source on
+
+// 19
+#pragma token off
+abcd
+#pragma source on
+abcd
+#pragma source off
+abcd
+#pragma token on
+
+// 20
+#pragma token off
+abcd
+#pragma source on
+abcd
+#pragma token on
+abcd
+#pragma source off
+
+// 21
+#pragma token off
+abcd
+#pragma source off
+abcd
+#pragma source on
+abcd
+#pragma token on
+
+// 22
+#pragma token off
+abcd
+#pragma source off
+abcd
+#pragma token on
+abcd
+#pragma source on
+
+// 23
+#pragma token off
+abcd
+#pragma token on
+abcd
+#pragma source on
+abcd
+#pragma source off
+
+//24
+#pragma token off
+abcd
+#pragma token on
+abcd
+#pragma source off
+abcd
+#pragma source on
+
+
