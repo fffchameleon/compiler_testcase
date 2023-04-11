@@ -1,0 +1,72 @@
+int main(int argc, const char *argv[])
+{    
+  
+#pragma         token   off
+    int fd = open("text", O_RDONLY);
+
+#pragma         token   on
+/* 
+
+ // hihih
+ 
+#pragma     source   off
+#pragma         token   off
+
+*/
+    if(fd == -1)
+    {
+        printf("file open error!\n");
+
+#pragma     source   off
+#pragma         token   off
+        exit(EXIT_FAILURE);
+    }
+
+    struct stat text_info = {0};
+
+#pragma     source   on
+    fstat( fd, &text_info );
+    int text_len = (int)text_info.st_size;
+
+    char *map = (char *)mmap(0, getpagesize(), PROT_READ, MAP_SHARED, fd, 0);
+    close(fd);
+
+    if(map == MAP_FAILED)
+  
+#pragma         token   off
+    {
+        close(fd);
+        printf("mapping error!\n");
+        exit(EXIT_FAILURE);
+    }
+
+    if(!text_len)
+        printf("empty file\n");
+#pragma         token   on
+#pragma     source   off
+    while(text_len)
+    {
+        char c;
+		printf("==============================================\n");
+        printf("r : read    q : quit\n");
+        printf("=> ");
+        scanf("%c", &c);
+        getchar();
+
+        if(c == 'q')
+            break;
+        else if(c != 'r')
+            continue;
+        printf(color);
+
+#pragma     source   on
+        for(int i = 0; i < getpagesize(); ++i)
+        {
+            printf("%c", map[i]);
+        }
+        printf(rst);
+
+    }
+
+    return 0;
+}

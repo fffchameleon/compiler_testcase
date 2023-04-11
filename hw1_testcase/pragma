@@ -1,0 +1,43 @@
+#pragma source off
+int lengthOfLongestSubstring(char * s){
+    int n = strlen(s);
+    int char_set[128];
+#pragma source  on
+    memset(char_set, 0, sizeof(char_set));
+    int max_len = 0;
+    char *start = s, *end = s;
+    while (end < s + n) {
+        if (char_set[*end] == 0) {
+            char_set[*end] = 1;
+
+#pragma         token   off
+            end++;
+            if (end - start > max_len)
+                max_len = end - start;
+        } else {
+            char_set[*start] = 0;
+            start++;
+        }
+#pragma token  on
+    }
+    return max_len;
+}
+int main() {
+    
+  int age;
+  // double height;
+  
+  printf("Enter the age: ");
+  scanf("%d", &age);
+#pragma         token   on
+#pragma     source   off
+#pragma         token   off
+  // printf("Enter the height: ");
+  // scanf("%lf", &height);
+  
+  printf("Age = %d", age);
+  // printf("\nHeight = %.1lf", height);
+
+#pragma source on
+  return 0;
+}

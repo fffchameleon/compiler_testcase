@@ -1,0 +1,15 @@
+/* #pragma src off
+hello
+# pragma token off
+*/
+
+/* hahahaha
+here's the comment
+i don't know
+*/int main() {
+// here's test
+// idk
+  int a = 1;
+  int b = -1;
+  return a + b;
+}
