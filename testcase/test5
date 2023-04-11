@@ -25,7 +25,7 @@ int main() {
   string ss = "qwer\"";
 #pragma source                   on
   string sss = "string\"";
-  string ssss = "string\q";
+  string ssss = "string\r";
 
   char cc = '\t';
   char ccc = ' ';
