@@ -8,3 +8,9 @@ cd compiler_testcase
 ./run.py [path_to_your_scanner]
 ./run.py [path_to_your_scanner] [name_of_specific_testcase]
 ```
+
+## Resource
+(Provided by William-Mou)
+- [Dragon-Book-Solutions](https://github.com/alirezasamar/Dragon-Book-Solutions)
+- [Great tool for demonstrating the process of translating Regular Expressions to minimal DFAs](https://cyberzhg.github.io/toolbox/)
+- [compiler class slides](https://drive.google.com/drive/folders/17dhKeYC_U3vDPdbM88nAz2J3b5bC1M4l)
