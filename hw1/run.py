@@ -19,12 +19,12 @@ scanner = sys.argv[1]
 golden_scanner = "golden_scanner"
 
 if len(sys.argv) == 2:
-    for root, dirs, files in os.walk("."):
+    for root, dirs, files in os.walk("hw1"):
         for filename in files:
             if (filename == "run.py"):
                 continue
-            output1 = subprocess.check_output(f"{scanner} < ./{filename}", shell=True)
-            output2 = subprocess.check_output(f"{golden_scanner} < ./{filename}", shell=True)
+            output1 = subprocess.check_output(f"{scanner} < hw1/{filename}", shell=True)
+            output2 = subprocess.check_output(f"{golden_scanner} < hw1/{filename}", shell=True)
             if output1 == output2:
                 print(f"test {filename:<35} {GREEN}{'correct':>10}{RESET}")
             else:
@@ -32,8 +32,8 @@ if len(sys.argv) == 2:
 
 if len(sys.argv) == 3:
     filename = sys.argv[2]
-    output1 = subprocess.check_output(f"{scanner} < ./{filename}", shell=True)
-    output2 = subprocess.check_output(f"{golden_scanner} < ./{filename}", shell=True)
+    output1 = subprocess.check_output(f"{scanner} < hw1/{filename}", shell=True)
+    output2 = subprocess.check_output(f"{golden_scanner} < hw1/{filename}", shell=True)
 
     if output1 == output2:
         print(f"test {filename} {GREEN}correct{RESET}")
