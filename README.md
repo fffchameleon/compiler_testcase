@@ -5,8 +5,8 @@
 ```
 git clone https://github.com/fffchameleon/compiler_testcase.git
 cd compiler_testcase
-./run.py [path_to_your_scanner]
-./run.py [path_to_your_scanner] [name_of_specific_testcase]
+./run.py [choosen_hw] [path_to_scanner]
+./run.py [choosen_hw] [path_to_scanner] [name_of_specific_testcase]
 ```
 
 ## Resource
