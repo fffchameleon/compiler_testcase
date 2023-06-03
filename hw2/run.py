@@ -16,13 +16,15 @@ if len(sys.argv) < 2 or len(sys.argv) > 3:
     sys.exit(1)
 
 scanner = sys.argv[1]
-golden_scanner = "golden_scanner"
+golden_scanner = "golden_parser"
 
 if len(sys.argv) == 2:
-    for root, dirs, files in os.walk("testcase"):
+    for root, dirs, files in os.walk("."):
         for filename in files:
-            output1 = subprocess.check_output(f"{scanner} < testcase/{filename}", shell=True)
-            output2 = subprocess.check_output(f"{golden_scanner} < testcase/{filename}", shell=True)
+            if (filename == "run.py"):
+                continue
+            output1 = subprocess.check_output(f"{scanner} < ./{filename}", shell=True)
+            output2 = subprocess.check_output(f"{golden_scanner} < ./{filename}", shell=True)
             if output1 == output2:
                 print(f"test {filename:<35} {GREEN}{'correct':>10}{RESET}")
             else:
@@ -30,8 +32,8 @@ if len(sys.argv) == 2:
 
 if len(sys.argv) == 3:
     filename = sys.argv[2]
-    output1 = subprocess.check_output(f"{scanner} < testcase/{filename}", shell=True)
-    output2 = subprocess.check_output(f"{golden_scanner} < testcase/{filename}", shell=True)
+    output1 = subprocess.check_output(f"{scanner} < ./{filename}", shell=True)
+    output2 = subprocess.check_output(f"{golden_scanner} < ./{filename}", shell=True)
 
     if output1 == output2:
         print(f"test {filename} {GREEN}correct{RESET}")
