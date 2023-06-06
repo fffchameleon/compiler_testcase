@@ -1,0 +1,18 @@
+void a() {
+  1;
+}
+
+const signed long long b(float c) {
+  return 2;
+}
+unsigned * d(double * e, signed char f) {
+}
+
+signed short * g() {
+  return;
+}
+
+void * h(const int * i, const j) {
+  3;
+}
+
