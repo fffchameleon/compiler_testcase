@@ -1,0 +1,44 @@
+int main(){
+    if(a[2] < (b + 2)){
+        a[2] = -b;
+    }
+    else{
+        &b = *a[2];
+    }
+
+    switch(*c & &d){
+        case (-e % func(tt)):
+            k = func(a, b, c);
+        case 5878247 >> tt[2][&b]:
+            (char)bb = "ABC" + 'D';
+        default:
+    }
+
+    while(a + -b != c){
+        do{
+            RapOfChina(TizzyT, GALI, MCHotDog, Capper);
+            if(LeagueOfBaby == "win"){
+                char* KeyNG = "Bow down to KeyNG";
+                break;
+            }
+        }
+        while("Hello" + "World" << "Z" == GALI);    
+    }
+
+    for(i = 0;i<=4;i++){
+		for(j = 97;j<=122;j++){
+			if(Input[i]==j){
+				Input[i] = 219-j;
+				break;
+			}
+			else{
+                continue;
+            }
+		}
+	}
+
+    for(;;) break;
+
+    return 114514;
+    return;
+}
