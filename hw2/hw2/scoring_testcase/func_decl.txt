@@ -1,0 +1,6 @@
+void a();
+const signed long long b(float c);
+unsigned * d(double * e, signed char f);
+signed short * g();
+void * h(const int * i, const j);
+

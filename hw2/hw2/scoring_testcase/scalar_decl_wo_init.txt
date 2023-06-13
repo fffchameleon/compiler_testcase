@@ -1,0 +1,11 @@
+const signed int a;
+unsigned long long b;
+const short c;
+unsigned long * d;
+const unsigned char e;
+float f;
+const double g;
+void * h;
+const float i, *j, *k, l;
+short m, n, o;
+

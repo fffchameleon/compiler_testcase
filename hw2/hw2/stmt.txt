@@ -1,0 +1,26 @@
+int main() {
+  0;
+  if (1) {
+    return 2;
+    switch (3) {
+      case 4: 
+      case 5: {}
+      default: 
+    }
+    6;
+  } else {
+    if (7) {
+    }
+    while (8)
+      do {
+        float a, b, c;
+        9;
+        continue;
+      } while (10);
+  }
+  for (; 11 < 12; 13) {
+    continue;
+  }
+  return;
+}
+

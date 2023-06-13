@@ -1,0 +1,5 @@
+int a = 0, b;
+unsigned char c[1][2] = { { 'd' } };
+const float e[3][4][5] = { 0.0 };
+double f = 6.7, g, h, i = -8;
+
